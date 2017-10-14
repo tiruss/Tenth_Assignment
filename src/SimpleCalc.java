@@ -47,7 +47,7 @@ public class SimpleCalc extends JFrame implements ActionListener{
 			}
 		}
 		
-		//numbers to input
+		//add number actionlistener
 		buttons[5].addActionListener(this);
 		buttons[6].addActionListener(this);
 		buttons[7].addActionListener(this);
@@ -59,26 +59,34 @@ public class SimpleCalc extends JFrame implements ActionListener{
 		buttons[17].addActionListener(this);
 		buttons[20].addActionListener(this);
 		
+		//add divide
 		OperatorAction div = new OperatorAction(1);
 		buttons[8].addActionListener(div);
 		
+		//add sqrt
 		OperatorAction sqrt = new OperatorAction(2);
 		buttons[9].addActionListener(sqrt);
 		
+		//add multifly
 		OperatorAction mul = new OperatorAction(3);
 		buttons[13].addActionListener(mul);
 		
+		//add the rest
 		OperatorAction nmg = new OperatorAction(4);
 		buttons[14].addActionListener(nmg);
 		
+		//add subtraction
 		OperatorAction sub = new OperatorAction(5);
 		buttons[18].addActionListener(sub);
 		
+		//add addition
 		OperatorAction add = new OperatorAction(6);
 		buttons[23].addActionListener(add);
 		
+		//add clear all
 		OperatorAction clear = new OperatorAction(7);
 		buttons[3].addActionListener(clear);
+		
 		
 		buttons[24].addActionListener(new ActionListener() 
 		{
