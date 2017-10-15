@@ -86,6 +86,7 @@ public class SimpleCalc extends JFrame implements ActionListener{
 		//add clear all
 		OperatorAction clear = new OperatorAction(7);
 		buttons[3].addActionListener(clear);
+		buttons[4].addActionListener(clear);
 		
 		
 		buttons[24].addActionListener(new ActionListener() 
@@ -114,8 +115,8 @@ public class SimpleCalc extends JFrame implements ActionListener{
 					}
 					else if (calcOperation == 4)
 					{
-						float calculate = currentCalc / number;
-						numberCalc.setText(Float.toString(calculate));
+						int calculate = (int) currentCalc / number;
+						numberCalc.setText(Integer.toString(calculate));
 					}
 					else if (calcOperation == 5)
 					{
